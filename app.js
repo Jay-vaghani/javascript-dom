@@ -36,14 +36,14 @@ let HeaderTitle = document.getElementById("header-title")
 // for (let i = 0; i < items.length; i++) {
 
 
-    // if(i % 2 === 0){
-    //     items[i].style.backgroundColor = "blue"
-    //     console.log(i);
-    // }
+// if(i % 2 === 0){
+//     items[i].style.backgroundColor = "blue"
+//     console.log(i);
+// }
 
-    // i % 2 === 0 ? items[i].style.backgroundColor = "blue" : "" 
+// i % 2 === 0 ? items[i].style.backgroundColor = "blue" : "" 
 
-    // items[i].style.backgroundColor = "blue"
+// items[i].style.backgroundColor = "blue"
 
 // }
 
@@ -100,7 +100,7 @@ let HeaderTitle = document.getElementById("header-title")
 
 // **************************** TRAVERSING DOM **************************** 
 
-// let itemList = document.querySelector("#items")
+let itemList = document.querySelector("#items")
 // console.log(itemList);
 
 // Parent Node 
@@ -224,8 +224,180 @@ let HeaderTitle = document.getElementById("header-title")
 // container.insertBefore(newDiv, h1)
 
 
+// **************************** EVENT LISTENER **************************** 
+
+
+// ************** TYPE OF EVENT ************** 
+
+
+// (1) click 
+// (2) dblclick 
+// (3) mousedown 
+// (3) mouseup 
+// (3) mouseenter 
+// (3) mouseleave 
+// (3) mouseover 
+// (3) mouseout 
+// (3) mousemove 
+// (3) keyup 
+// (3) keydown 
+// (3) keypress 
+// (3) focus 
+// (3) blur 
+// (3) cut
+// (3) paste
+// (3) input 
+
+
+// let btn = document.querySelector("#btn-dark")
+// let input  = document.querySelector('input[type="text"]')
+
+
+// ************** METHODS TO TAGGER EVENT LISTENER ************** 
 
 
 
+// btn.addEventListener("click", ()=>{
+//     alert("ok")
+// })
+
+// btn.addEventListener("click", function(){
+//     alert("ok")
+// })
 
 
+// btn.addEventListener("click",  handelClick)
+
+
+// ************** TYPE OF EVENT IN USE ************** 
+
+
+// btn.addEventListener("click",  eventType)
+// btn.addEventListener("dblclick",  eventType)
+// btn.addEventListener("mousedown",  eventType)
+// btn.addEventListener("mouseup",  eventType)
+// btn.addEventListener("mouseenter",  eventType)
+// btn.addEventListener("mouseleave",  eventType)
+// btn.addEventListener("mouseover",  eventType) // Also Trigger When Mouse Enter Element Inside Element
+// btn.addEventListener("mouseout",  eventType) // Also Trigger When Mouse Enter Element Inside Element
+// btn.addEventListener("mousemove",  eventType)
+
+
+// input.addEventListener("keyup", eventType)
+// input.addEventListener("keydown", eventType)
+// input.addEventListener("keypress", eventType)
+// input.addEventListener("focus", eventType)
+// input.addEventListener("blur", eventType)
+// input.addEventListener("cut", eventType)
+// input.addEventListener("paste", eventType)
+// input.addEventListener("input", eventType)
+
+
+
+function handelClick(e) {
+    // console.log(e);
+    // console.log(e.target);
+    // console.log(e.target.id);
+    // console.log(e.target.className);
+    // console.log(e.target.classList);
+
+    // let btnId = e.target.id
+    // let btnClass = e.target.className
+    // let btnClassList = e.target.classList
+
+    // document.querySelector(".demo").innerHTML = `<h4>Button ID: ${btnId} <br /> Button Classes: ${btnClass}</h4>`
+
+    // console.log(e.clientX);
+    // console.log(e.clientY);
+
+    // console.log(e.offsetX);
+    // console.log(e.offsetY);
+
+    // console.log(e.altKey);
+    // console.log(e.ctrlKey);
+    // console.log(e.shiftKey);
+
+}
+
+function eventType(e) {
+    // console.log(`Event Type = ${e.type}`);
+}
+
+
+
+// **************************** START PROJECT ****************************
+
+
+// ************** SELECTING ELEMENT FROM DOM ************** 
+
+
+// let addListBtn = document.querySelector("input[type='submit']")
+// let items = document.querySelector("#items")
+// let input = document.querySelector("input[type='text']")
+
+
+
+// // ************** ADD ITEM IN LIST ************** 
+
+
+// // ******* CLICK EVENT LISTENER *******
+
+// addListBtn.addEventListener('click', addItem)
+
+// function addItem(e) {
+//     e.preventDefault()
+
+//     // ******* CREATING LI *******
+
+//     let newItem = document.createElement("li")
+//     newItem.innerText = input.value
+//     newItem.className = "list-group-item"
+
+//     // ******* CREATING DELETE BUTTON *******
+
+//     let deleteBtn = document.createElement("button")
+//     deleteBtn.className = "btn btn-danger btn-sm float-end"
+//     deleteBtn.innerText = "X"
+
+//     // ******* ADD BUTTON IN LI *******
+
+//     newItem.appendChild(deleteBtn)
+
+//     // ******* ADD LI IN UL *******
+
+//     items.appendChild(newItem)
+
+//     let DeleteListBtns = document.querySelectorAll(".btn-danger")
+
+
+//     DeleteListBtns.forEach(function (e) {
+//         console.log(e);
+//         e.addEventListener("click", deleteFun)
+//     })
+
+//     function deleteFun(e) {
+//         console.log(e.target);
+//         console.log(e.target.parentElement);
+//         items.removeChild(e.target.parentElement)
+//     }
+
+// }
+
+
+
+// // ************** DELETE ITEM IN LIST ************** 
+
+
+// let DeleteListBtns = document.querySelectorAll(".btn-danger")
+
+
+// DeleteListBtns.forEach(function (e) {
+//     console.log(e);
+//     e.addEventListener("click", deleteFun)
+// })
+
+// function deleteFun(e) {
+//     console.log(e.target);
+//     console.log(e.target.parentElement);
+//     items.removeChild(e.target.parentElement)
+// }

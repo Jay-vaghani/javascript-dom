@@ -19,17 +19,19 @@
     <div class="container">
         <div id="main" class="card card-body">
             <h2 class="title"> Add Items </h2>
-            <form class="form-inline mb-3 d-flex">
+            <form class="form-inline mb-3 d-flex" id="add-form">
                 <input type="text" class="form-control me-2">
-                <input type="submit" class="btn btn-dark" value="submit">
+                <input type="submit" class="btn btn-dark" value="Add List">
             </form>
             <h2 h2 class=" title "> Items </h2>
             <ul id="items" class="list-group">
-                <li class="list-group-item"> Item 1 </li>
-                <li class="list-group-item"> Item 2 </li>
-                <li class="list-group-item"> Item 3 </li>
-                <li class="list-group-item"> Item 4 </li>
+                <li class="list-group-item"> Item 1 <button class="btn btn-danger btn-sm float-end">X</button> </li>
+                <li class="list-group-item"> Item 2 <button class="btn btn-danger btn-sm float-end">X</button> </li>
+                <li class="list-group-item"> Item 3 <button class="btn btn-danger btn-sm float-end">X</button> </li>
+                <li class="list-group-item"> Item 4 <button class="btn btn-danger btn-sm float-end">X</button> </li>
             </ul>
+            <div class="demo mt-3"></div>
+            <button class="btn btn-dark my-3"  id="btn-dark">Button Click</button>
         </div>
     </div>
 
