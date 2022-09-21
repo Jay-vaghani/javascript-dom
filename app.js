@@ -232,21 +232,21 @@ let itemList = document.querySelector("#items")
 
 // (1) click 
 // (2) dblclick 
-// (3) mousedown 
-// (3) mouseup 
-// (3) mouseenter 
-// (3) mouseleave 
-// (3) mouseover 
-// (3) mouseout 
-// (3) mousemove 
-// (3) keyup 
-// (3) keydown 
-// (3) keypress 
-// (3) focus 
-// (3) blur 
-// (3) cut
-// (3) paste
-// (3) input 
+// (4) mousedown 
+// (5) mouseup 
+// (6) mouseenter 
+// (7) mouseleave 
+// (8) mouseover 
+// (9) mouseout 
+// (10) mousemove 
+// (11) keyup 
+// (12) keydown 
+// (13) keypress 
+// (14) focus 
+// (15) blur 
+// (16) cut
+// (17) paste
+// (18) input 
 
 
 // let btn = document.querySelector("#btn-dark")
